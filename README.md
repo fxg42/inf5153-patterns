@@ -3,9 +3,13 @@
 ## Dépendances
 
 - JDK 10
-- Gradle 4.6+
 
-## Exemple d'exécution
+## Exemple d'exécution (unix)
 
     $ cd proxy
-    $ gradle test
+    $ ./gradlew test
+
+## Exemple d'exécution (win)
+
+    $ cd proxy
+    $ gradlew.bat test
