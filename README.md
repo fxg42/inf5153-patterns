@@ -7,9 +7,9 @@
 ## Exemple d'exécution (unix)
 
     $ cd proxy
-    $ ./gradlew test
+    $ ../gradlew test
 
 ## Exemple d'exécution (win)
 
     $ cd proxy
-    $ gradlew.bat test
+    $ ../gradlew.bat test
