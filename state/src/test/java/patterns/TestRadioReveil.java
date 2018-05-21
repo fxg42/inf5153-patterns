@@ -7,12 +7,15 @@ class TestRadioReveil {
 
   @Test void it_should_switch_modes() {
     var radio = new RadioReveil();
-    radio.onLeftArrowButtonPress();
+    radio.onRightArrowButtonPress();
+
     radio.onSwitchMode(RadioReveil.Mode.SET_TIME);
-    radio.onLeftArrowButtonPress();
+    radio.onRightArrowButtonPress();
+
     radio.onSwitchMode(RadioReveil.Mode.SET_ALARM);
-    radio.onLeftArrowButtonPress();
+    radio.onRightArrowButtonPress();
+    
     radio.onSwitchMode(RadioReveil.Mode.NORMAL);
-    radio.onLeftArrowButtonPress();
+    radio.onRightArrowButtonPress();
   }
 }
