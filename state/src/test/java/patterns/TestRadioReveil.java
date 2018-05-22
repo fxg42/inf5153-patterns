@@ -7,15 +7,12 @@ class TestRadioReveil {
 
   @Test void it_should_switch_modes() {
     var radio = new RadioReveil();
-    radio.onRightArrowButtonPress();
+    assertEquals("Sélectionne la chaîne de radio présélectionnée suivante...", radio.onRightArrowButtonPress());
 
     radio.onSwitchMode(RadioReveil.Mode.SET_TIME);
-    radio.onRightArrowButtonPress();
+    assertEquals("Avance l'heure du cadran...", radio.onRightArrowButtonPress());
 
     radio.onSwitchMode(RadioReveil.Mode.SET_ALARM);
-    radio.onRightArrowButtonPress();
-    
-    radio.onSwitchMode(RadioReveil.Mode.NORMAL);
-    radio.onRightArrowButtonPress();
+    assertEquals("Avance l'heure de l'alarme...", radio.onRightArrowButtonPress());
   }
 }
